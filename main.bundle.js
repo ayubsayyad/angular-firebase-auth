@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <nav class=\"navbar navbar-default\">\n        <div *ngIf=\"isLoggedIn\">\n          <p class=\"navbar-text navbar-right\">Logged In: {{user_displayName}} ({{user_email}})<p>\n        </div>\n        <div *ngIf=\"!isLoggedIn\">\n          <p class=\"navbar-text navbar-right\">Logged Out</p>\n        </div>\n    </nav>\n    <router-outlet></router-outlet>\n</div>\n"
+module.exports = "\n<div class=\"container\">\n    <nav class=\"navbar navbar-default\">\n        <div *ngIf=\"isLoggedIn\">\n          <p class=\"navbar-text navbar-center\">Logged In: {{user_displayName}} ({{user_email}})<p>\n        </div>\n        <div *ngIf=\"!isLoggedIn\">\n          <p class=\"navbar-text navbar-right\">Logged Out</p>\n        </div>\n    </nav>\n    <router-outlet></router-outlet>\n</div>\n"
 
 /***/ }),
 
@@ -124,15 +124,16 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/esm5/animations.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_material_slide_toggle__ = __webpack_require__("../../../material/esm5/slide-toggle.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_material_form_field__ = __webpack_require__("../../../material/esm5/form-field.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_material_input__ = __webpack_require__("../../../material/esm5/input.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_material_select__ = __webpack_require__("../../../material/esm5/select.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_angularfire2_database__ = __webpack_require__("../../../../angularfire2/database/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_material_select__ = __webpack_require__("../../../material/esm5/select.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_angularfire2_database__ = __webpack_require__("../../../../angularfire2/database/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -159,7 +160,7 @@ var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["J" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__login_page_login_page_component__["a" /* LoginPageComponent */],
@@ -167,15 +168,21 @@ var AppModule = (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_15__angular_material_input__["a" /* MatInputModule */],
-                __WEBPACK_IMPORTED_MODULE_16__angular_material_select__["a" /* MatSelectModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_17__angular_material__["d" /* MatInputModule */],
+                __WEBPACK_IMPORTED_MODULE_15__angular_material_select__["a" /* MatSelectModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["i" /* ReactiveFormsModule */],
+                __WEBPACK_IMPORTED_MODULE_17__angular_material__["c" /* MatIconModule */],
+                __WEBPACK_IMPORTED_MODULE_17__angular_material__["b" /* MatDatepickerModule */],
+                __WEBPACK_IMPORTED_MODULE_17__angular_material__["e" /* MatRadioModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__["b" /* AngularFireAuthModule */],
                 __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+                __WEBPACK_IMPORTED_MODULE_17__angular_material__["g" /* MatTableModule */],
                 __WEBPACK_IMPORTED_MODULE_13__angular_material_slide_toggle__["a" /* MatSlideToggleModule */],
+                __WEBPACK_IMPORTED_MODULE_17__angular_material__["a" /* MatCheckboxModule */],
                 __WEBPACK_IMPORTED_MODULE_14__angular_material_form_field__["c" /* MatFormFieldModule */],
-                __WEBPACK_IMPORTED_MODULE_17_angularfire2_database__["b" /* AngularFireDatabaseModule */],
+                __WEBPACK_IMPORTED_MODULE_16_angularfire2_database__["b" /* AngularFireDatabaseModule */],
                 __WEBPACK_IMPORTED_MODULE_4_angularfire2__["a" /* AngularFireModule */].initializeApp({
                     apiKey: "AIzaSyBnea5CJ5WKyYxo81YwdceMkpabJRWgV3c",
                     authDomain: "devdemo-610e1.firebaseapp.com",
@@ -205,7 +212,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".example-form {\n    min-width: 150px;\n    max-width: 500px;\n    width: 100%;\n  }\n  \n  .example-full-width {\n    width: 100%;\n  }", ""]);
+exports.push([module.i, ".example-form {\n    min-width: 150px;\n    max-width: 500px;\n    width: 100%;\n  }\n  \n  .example-full-width {\n    width: 100%;\n  }\n\n  .example-container {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    max-height: 500px;\n    min-width: 300px;\n  }\n  \n  .mat-table {\n    overflow: auto;\n    max-height: 500px;\n  }\n", ""]);
 
 // exports
 
@@ -218,7 +225,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home-page/home-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div>\n      <p><button class=\"btn btn-default\" (click)=\"logout()\">Logout</button></p>\n    </div>\n    <div>\n        <div class=\"refer-friend\">\n            <form>\n                <div class=\"form-group\">\n                  <label for=\"referral_name\">Referral Name</label>\n                  <input \n                    type=\"text\" \n                    class=\"form-control\" \n                    id=\"referral_name\"\n                    name=\"referral_name\" \n                    aria-describedby=\"referral_name\" \n                    placeholder=\"Jon Snow\"\n                    [(ngModel)]=\"referral.name\">\n                  <!--small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small-->\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"referral_phone\">Phone Number</label>\n                    <input \n                      type=\"number\" \n                      class=\"form-control\" \n                      id=\"referral_phone\" \n                      name=\"referral_phone\" \n                      aria-describedby=\"referral_phone\" \n                      placeholder=\"888888888\"\n                      [(ngModel)]=\"referral.phone\">\n                    <!--small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small-->\n                  </div>\n                  <div class=\"form-group\">\n                      <label for=\"referral_email\">Email address</label>\n                      <input \n                        type=\"email\" \n                        class=\"form-control\" \n                        id=\"referral_email\"\n                        name=\"referral_email\"\n                        aria-describedby=\"referral_email\" \n                        placeholder=\"jonsnow@gmail.com\"\n                        [(ngModel)]=\"referral.email\">\n                      <!--small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small-->\n                  </div>\n                  <button \n                    class=\"btn btn-outline-success\" \n                    type=\"button\"\n                    (click)=\"onRefer()\">Refer friend</button>\n                    <div class=\"alert\" [className]=\"alert_class\" role=\"alert\" *ngIf=\"alert_class\">\n                        {{alert_message}}\n                    </div>\n              </form>\n          \n        </div>\n        \n        <div class=\"my-referrals mt-5\" *ngIf=\"my_referrals\">\n          <h6>My Referrals</h6>\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th scope=\"col\">#</th>\n                <th scope=\"col\">Name</th>\n                <th scope=\"col\">Phone</th>\n                <th scope=\"col\">Email</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr *ngFor=\"let referal of my_referrals; let i = index\" >\n                <th scope=\"row\">{{i + 1}}</th>\n                <td>{{referal.name}}</td>\n                <td>{{referal.phone}}</td>\n                <td>{{referal.email}}</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>      \n    </div>\n  </div>\n</div>"
+module.exports = "<!--<mat-checkbox class=\"example-margin\">tttt</mat-checkbox> -->\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div>\n      <p><button class=\"btn btn-default\" (click)=\"logout()\">Logout</button></p>\n    </div>\n    <div>\n        <div class=\"refer-friend\">\n            <form>\n                  <div>\n                    <mat-radio-group>\n                      <mat-radio-button value=\"1\">Refer Friend</mat-radio-button>\n                      <mat-radio-button value=\"2\">File Login</mat-radio-button>\n                    </mat-radio-group>\n                  </div>\n                  \n                  <div>\n                    <mat-form-field class=\"example-full-width\">\n                      <input matInput placeholder=\"Name\" value=\"\">\n                      </mat-form-field>\n                  </div>                         \n\n                  <div>\n                      <mat-form-field class=\"example-full-width\">\n                          <span matPrefix>+91 &nbsp;</span>\n                          <input type=\"tel\" matInput placeholder=\"Telephone\">\n                          <mat-icon matSuffix>mode_edit</mat-icon>\n                        </mat-form-field>\n                  </div>\n                  <div>\n                          <mat-form-field class=\"example-full-width\">\n                            <input matInput placeholder=\"Email\" [formControl]=\"emailFormControl\">\n                            <mat-error *ngIf=\"emailFormControl.hasError('email') && !emailFormControl.hasError('required')\">\n                              Please enter a valid email address\n                            </mat-error>\n                            <mat-error *ngIf=\"emailFormControl.hasError('required')\">\n                              Email is <strong>required</strong>\n                            </mat-error>\n                          </mat-form-field>\n                  </div>\n                  <div>                    \n                      <mat-form-field class=\"example-full-width\">\n                        <textarea matInput placeholder=\"Leave a comment\"></textarea>\n                      </mat-form-field>\n                  </div>\n\n                  <div>\n                      <mat-form-field>\n                          <mat-select placeholder=\"Referal Type\">\n                            <mat-option *ngFor=\"let food of foods\" [value]=\"food.value\">\n                              {{ food.viewValue }}\n                            </mat-option>\n                          </mat-select>\n                        </mat-form-field>\n                  </div>\n               \n\n                  <button \n                    class=\"btn btn-outline-success\" \n                    type=\"button\"\n                    (click)=\"onRefer()\">Refer friend</button>\n                    <div class=\"alert\" [className]=\"alert_class\" role=\"alert\" *ngIf=\"alert_class\">\n                        {{alert_message}}\n                    </div>\n              </form>\n            </div>   \n    </div>\n  </div>\n</div>\n\n<div class=\"example-container mat-elevation-z8\">\n    <mat-table #table [dataSource]=\"dataSource\">\n  \n      <!--- Note that these columns can be defined in any order.\n            The actual rendered columns are set as a property on the row definition\" -->\n    \n      <!-- Name Column -->\n      <ng-container matColumnDef=\"name\">\n        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\"> {{element.name}} </mat-cell>\n      </ng-container>\n  \n      <!-- Weight Column -->\n      <ng-container matColumnDef=\"email\">\n        <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\"> {{element.email}} </mat-cell>\n      </ng-container>\n  \n      <!-- Symbol Column -->\n      <ng-container matColumnDef=\"phone\">\n        <mat-header-cell *matHeaderCellDef> Phone </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\"> {{element.phone}} </mat-cell>\n      </ng-container>\n  \n      <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n      <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n    </mat-table>\n  </div>\n  "
 
 /***/ }),
 
@@ -226,11 +233,13 @@ module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div>\n 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* unused harmony export Referral */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service__ = __webpack_require__("../../../../../src/app/providers/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__referal_model__ = __webpack_require__("../../../../../src/app/home-page/referal.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -244,26 +253,52 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+var Referral = (function () {
+    function Referral() {
+    }
+    return Referral;
+}());
+
 var HomePageComponent = (function () {
     function HomePageComponent(authService, router) {
         var _this = this;
         this.authService = authService;
         this.router = router;
-        this.referral = new __WEBPACK_IMPORTED_MODULE_3__referal_model__["a" /* Referral */]();
-        this.my_referrals = [];
+        this.displayedColumns = ['name', 'email', 'phone'];
+        this.dataSource = new __WEBPACK_IMPORTED_MODULE_3__angular_material__["f" /* MatTableDataSource */]();
+        this.referral = new Referral();
+        this.referrals = [];
+        this.foods = [];
+        this.emailFormControl = new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["b" /* FormControl */]('', [
+            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["j" /* Validators */].required,
+            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["j" /* Validators */].email,
+        ]);
         this.callback = function (childDataVal) {
-            _this.my_referrals.push(childDataVal);
+            //this.dataSource.data.push(childDataVal)
+            _this.referrals.push(childDataVal);
+            console.log(childDataVal);
         };
     }
     HomePageComponent.prototype.ngOnInit = function () {
+        this.foods = [
+            { value: 'HL', viewValue: 'Home Loan' },
+            { value: 'PL', viewValue: 'Personal Loan' },
+            { value: 'BL', viewValue: 'Business Loan' }
+        ];
+        this.emailFormControl = new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["b" /* FormControl */]('', [
+            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["j" /* Validators */].required,
+            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["j" /* Validators */].email,
+        ]);
     };
     HomePageComponent.prototype.logout = function () {
         this.authService.logout();
         this.router.navigate(['login']);
     };
     HomePageComponent.prototype.onRefer = function () {
-        this.my_referrals = [];
+        this.dataSource.data = [];
         this.authService.senddata(this.referral, this.callback);
+        this.dataSource = new __WEBPACK_IMPORTED_MODULE_3__angular_material__["f" /* MatTableDataSource */](this.referrals);
     };
     HomePageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -428,7 +463,7 @@ var AuthService = (function () {
         });
     };
     AuthService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__["a" /* AngularFireDatabase */]])
     ], AuthService);
     return AuthService;
@@ -468,7 +503,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
