@@ -123,17 +123,15 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__home_page_home_page_component__ = __webpack_require__("../../../../../src/app/home-page/home-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/esm5/animations.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_material_slide_toggle__ = __webpack_require__("../../../material/esm5/slide-toggle.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_material_form_field__ = __webpack_require__("../../../material/esm5/form-field.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_material_select__ = __webpack_require__("../../../material/esm5/select.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_angularfire2_database__ = __webpack_require__("../../../../angularfire2/database/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_material_select__ = __webpack_require__("../../../material/esm5/select.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_angularfire2_database__ = __webpack_require__("../../../../angularfire2/database/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -168,21 +166,22 @@ var AppModule = (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__["a" /* NoopAnimationsModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_17__angular_material__["d" /* MatInputModule */],
-                __WEBPACK_IMPORTED_MODULE_15__angular_material_select__["a" /* MatSelectModule */],
+                __WEBPACK_IMPORTED_MODULE_16__angular_material__["e" /* MatInputModule */],
+                __WEBPACK_IMPORTED_MODULE_16__angular_material__["g" /* MatPaginatorModule */],
+                __WEBPACK_IMPORTED_MODULE_14__angular_material_select__["a" /* MatSelectModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["i" /* ReactiveFormsModule */],
-                __WEBPACK_IMPORTED_MODULE_17__angular_material__["c" /* MatIconModule */],
-                __WEBPACK_IMPORTED_MODULE_17__angular_material__["b" /* MatDatepickerModule */],
-                __WEBPACK_IMPORTED_MODULE_17__angular_material__["e" /* MatRadioModule */],
+                __WEBPACK_IMPORTED_MODULE_16__angular_material__["d" /* MatIconModule */],
+                __WEBPACK_IMPORTED_MODULE_16__angular_material__["b" /* MatDatepickerModule */],
+                __WEBPACK_IMPORTED_MODULE_16__angular_material__["h" /* MatRadioModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__["b" /* AngularFireAuthModule */],
-                __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_17__angular_material__["g" /* MatTableModule */],
+                __WEBPACK_IMPORTED_MODULE_16__angular_material__["j" /* MatTableModule */],
                 __WEBPACK_IMPORTED_MODULE_13__angular_material_slide_toggle__["a" /* MatSlideToggleModule */],
-                __WEBPACK_IMPORTED_MODULE_17__angular_material__["a" /* MatCheckboxModule */],
-                __WEBPACK_IMPORTED_MODULE_14__angular_material_form_field__["c" /* MatFormFieldModule */],
-                __WEBPACK_IMPORTED_MODULE_16_angularfire2_database__["b" /* AngularFireDatabaseModule */],
+                __WEBPACK_IMPORTED_MODULE_16__angular_material__["a" /* MatCheckboxModule */],
+                __WEBPACK_IMPORTED_MODULE_16__angular_material__["c" /* MatFormFieldModule */],
+                __WEBPACK_IMPORTED_MODULE_15_angularfire2_database__["b" /* AngularFireDatabaseModule */],
                 __WEBPACK_IMPORTED_MODULE_4_angularfire2__["a" /* AngularFireModule */].initializeApp({
                     apiKey: "AIzaSyBnea5CJ5WKyYxo81YwdceMkpabJRWgV3c",
                     authDomain: "devdemo-610e1.firebaseapp.com",
@@ -225,7 +224,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home-page/home-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--<mat-checkbox class=\"example-margin\">tttt</mat-checkbox> -->\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div>\n      <p><button class=\"btn btn-default\" (click)=\"logout()\">Logout</button></p>\n    </div>\n    <div>\n        <div class=\"refer-friend\">\n            <form>\n                  <div>\n                    <mat-radio-group>\n                      <mat-radio-button value=\"1\">Refer Friend</mat-radio-button>\n                      <mat-radio-button value=\"2\">File Login</mat-radio-button>\n                    </mat-radio-group>\n                  </div>\n                  \n                  <div>\n                    <mat-form-field class=\"example-full-width\">\n                      <input matInput placeholder=\"Name\" value=\"\">\n                      </mat-form-field>\n                  </div>                         \n\n                  <div>\n                      <mat-form-field class=\"example-full-width\">\n                          <span matPrefix>+91 &nbsp;</span>\n                          <input type=\"tel\" matInput placeholder=\"Telephone\">\n                          <mat-icon matSuffix>mode_edit</mat-icon>\n                        </mat-form-field>\n                  </div>\n                  <div>\n                          <mat-form-field class=\"example-full-width\">\n                            <input matInput placeholder=\"Email\" [formControl]=\"emailFormControl\">\n                            <mat-error *ngIf=\"emailFormControl.hasError('email') && !emailFormControl.hasError('required')\">\n                              Please enter a valid email address\n                            </mat-error>\n                            <mat-error *ngIf=\"emailFormControl.hasError('required')\">\n                              Email is <strong>required</strong>\n                            </mat-error>\n                          </mat-form-field>\n                  </div>\n                  <div>                    \n                      <mat-form-field class=\"example-full-width\">\n                        <textarea matInput placeholder=\"Leave a comment\"></textarea>\n                      </mat-form-field>\n                  </div>\n\n                  <div>\n                      <mat-form-field>\n                          <mat-select placeholder=\"Referal Type\">\n                            <mat-option *ngFor=\"let food of foods\" [value]=\"food.value\">\n                              {{ food.viewValue }}\n                            </mat-option>\n                          </mat-select>\n                        </mat-form-field>\n                  </div>\n               \n\n                  <button \n                    class=\"btn btn-outline-success\" \n                    type=\"button\"\n                    (click)=\"onRefer()\">Refer friend</button>\n                    <div class=\"alert\" [className]=\"alert_class\" role=\"alert\" *ngIf=\"alert_class\">\n                        {{alert_message}}\n                    </div>\n              </form>\n            </div>   \n    </div>\n  </div>\n</div>\n\n<div class=\"example-container mat-elevation-z8\">\n    <mat-table #table [dataSource]=\"dataSource\">\n  \n      <!--- Note that these columns can be defined in any order.\n            The actual rendered columns are set as a property on the row definition\" -->\n    \n      <!-- Name Column -->\n      <ng-container matColumnDef=\"name\">\n        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\"> {{element.name}} </mat-cell>\n      </ng-container>\n  \n      <!-- Weight Column -->\n      <ng-container matColumnDef=\"email\">\n        <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\"> {{element.email}} </mat-cell>\n      </ng-container>\n  \n      <!-- Symbol Column -->\n      <ng-container matColumnDef=\"phone\">\n        <mat-header-cell *matHeaderCellDef> Phone </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\"> {{element.phone}} </mat-cell>\n      </ng-container>\n  \n      <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n      <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n    </mat-table>\n  </div>\n  "
+module.exports = "<!--<mat-checkbox class=\"example-margin\">tttt</mat-checkbox> -->\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div>\n      <p><button class=\"btn btn-default\" (click)=\"logout()\">Logout</button></p>\n    </div>\n    <div>\n        <div class=\"refer-friend\">\n            <form>\n                  <div>\n                    <mat-radio-group [(ngModel)]=\"referral.refertype\" [ngModelOptions]=\"{standalone: true}\">\n                      <mat-radio-button value=\"Friend\">Refer Friend</mat-radio-button>\n                      <mat-radio-button value=\"FileLogin\">File Login</mat-radio-button>\n                    </mat-radio-group>\n                  </div>\n                  \n                  <div>\n                    <mat-form-field class=\"example-full-width\">\n                      <input matInput placeholder=\"Name\" value=\"\" [(ngModel)]=\"referral.name\" [ngModelOptions]=\"{standalone: true}\">\n                      </mat-form-field>\n                  </div>                         \n\n                  <div>\n                    \n                      <mat-form-field class=\"example-full-width\">\n                          <span matPrefix>+91 &nbsp;</span>\n                          <input type=\"tel\" matInput placeholder=\"Telephone\" [(ngModel)]=\"referral.phone\" \n                              [ngModelOptions]=\"{standalone: true}\">\n                          <mat-icon matSuffix>mode_edit</mat-icon>\n                        </mat-form-field>\n               \n                  </div>\n                  <div>\n                          <mat-form-field class=\"example-full-width\">\n                            <input matInput placeholder=\"Email\" [formControl]=\"emailFormControl\" [(ngModel)]=\"referral.email\"> \n                            <mat-error *ngIf=\"emailFormControl.hasError('email') && !emailFormControl.hasError('required')\">\n                              Please enter a valid email address\n                            </mat-error>\n                            <mat-error *ngIf=\"emailFormControl.hasError('required')\">\n                              Email is <strong>required</strong>\n                            </mat-error>\n                          </mat-form-field>\n                  </div>\n                  <div>                    \n                      <mat-form-field class=\"example-full-width\">\n                        <textarea matInput placeholder=\"Leave a comment\" maxlength=\"150\" \n                        [(ngModel)]=\"referral.comments\"\n                        [ngModelOptions]=\"{standalone: true}\"></textarea>\n                      </mat-form-field>\n                  </div>\n\n                  <div>\n                      <mat-form-field>\n                          <mat-select placeholder=\"Referal Type\" [(ngModel)]=\"referral.loanType\" [ngModelOptions]=\"{standalone: true}\">\n                            <mat-option *ngFor=\"let loanType of loanTypes\" [value]=\"loanType.value\">\n                              {{ loanType.viewValue }}\n                            </mat-option>\n                          </mat-select>\n                        </mat-form-field>\n                  </div>\n               \n\n                  <button \n                    class=\"btn btn-outline-success\" \n                    type=\"button\"\n                    (click)=\"onRefer()\">Refer friend</button>\n                    <div class=\"alert\" [className]=\"alert_class\" role=\"alert\" *ngIf=\"alert_class\">\n                        {{alert_message}}\n                    </div>\n              </form>\n            </div>   \n    </div>\n  </div>\n</div>\n\n<div class=\"example-container mat-elevation-z8\">\n    <mat-table #table [dataSource]=\"dataSource\">\n  \n      <!--- Note that these columns can be defined in any order.\n            The actual rendered columns are set as a property on the row definition\" -->\n    \n      <!-- Name Column -->\n      <ng-container matColumnDef=\"name\">\n        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\"> {{element.name}} </mat-cell>\n      </ng-container>\n  \n      <!-- Weight Column -->\n      <ng-container matColumnDef=\"email\">\n        <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\"> {{element.email}} </mat-cell>\n      </ng-container>\n  \n      <!-- Symbol Column -->\n      <ng-container matColumnDef=\"phone\">\n        <mat-header-cell *matHeaderCellDef> Phone </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\"> {{element.phone}} </mat-cell>\n      </ng-container>\n  \n      <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n      <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n    </mat-table>\n    <mat-paginator #paginator\n    [pageSize]=\"10\"\n    [pageSizeOptions]=\"[5, 10, 20]\">\n    </mat-paginator>\n\n  </div>\n  "
 
 /***/ }),
 
@@ -233,13 +232,13 @@ module.exports = "<!--<mat-checkbox class=\"example-margin\">tttt</mat-checkbox>
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export Referral */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service__ = __webpack_require__("../../../../../src/app/providers/auth.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__referal_model__ = __webpack_require__("../../../../../src/app/home-page/referal.model.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -254,11 +253,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var Referral = (function () {
-    function Referral() {
-    }
-    return Referral;
-}());
 
 var HomePageComponent = (function () {
     function HomePageComponent(authService, router) {
@@ -266,22 +260,25 @@ var HomePageComponent = (function () {
         this.authService = authService;
         this.router = router;
         this.displayedColumns = ['name', 'email', 'phone'];
-        this.dataSource = new __WEBPACK_IMPORTED_MODULE_3__angular_material__["f" /* MatTableDataSource */]();
-        this.referral = new Referral();
+        this.dataSource = new __WEBPACK_IMPORTED_MODULE_3__angular_material__["i" /* MatTableDataSource */]();
+        this.referral = new __WEBPACK_IMPORTED_MODULE_5__referal_model__["a" /* Referral */]();
         this.referrals = [];
-        this.foods = [];
+        this.loanTypes = [];
         this.emailFormControl = new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["b" /* FormControl */]('', [
             __WEBPACK_IMPORTED_MODULE_4__angular_forms__["j" /* Validators */].required,
             __WEBPACK_IMPORTED_MODULE_4__angular_forms__["j" /* Validators */].email,
         ]);
         this.callback = function (childDataVal) {
-            //this.dataSource.data.push(childDataVal)
-            _this.referrals.push(childDataVal);
-            console.log(childDataVal);
+            _this.referrals = childDataVal;
+            _this.dataSource = new __WEBPACK_IMPORTED_MODULE_3__angular_material__["i" /* MatTableDataSource */](_this.referrals);
+            _this.dataSource.paginator = _this.paginator;
         };
     }
+    HomePageComponent.prototype.ngAfterViewInit = function () {
+        this.dataSource.paginator = this.paginator;
+    };
     HomePageComponent.prototype.ngOnInit = function () {
-        this.foods = [
+        this.loanTypes = [
             { value: 'HL', viewValue: 'Home Loan' },
             { value: 'PL', viewValue: 'Personal Loan' },
             { value: 'BL', viewValue: 'Business Loan' }
@@ -296,10 +293,14 @@ var HomePageComponent = (function () {
         this.router.navigate(['login']);
     };
     HomePageComponent.prototype.onRefer = function () {
-        this.dataSource.data = [];
+        this.referrals = [];
         this.authService.senddata(this.referral, this.callback);
-        this.dataSource = new __WEBPACK_IMPORTED_MODULE_3__angular_material__["f" /* MatTableDataSource */](this.referrals);
+        console.log(this.referrals.length);
     };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_3__angular_material__["f" /* MatPaginator */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3__angular_material__["f" /* MatPaginator */])
+    ], HomePageComponent.prototype, "paginator", void 0);
     HomePageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-home-page',
@@ -447,19 +448,27 @@ var AuthService = (function () {
     AuthService.prototype.senddata = function (referral, callbackfun) {
         var items = this.sfa.database.ref('referals/' + this.af.auth.currentUser.uid.toString());
         var callback = function (snapshot) {
+            var referrals = [];
             snapshot.forEach(function (childSnapshot) {
                 var ref = new __WEBPACK_IMPORTED_MODULE_3__home_page_referal_model__["a" /* Referral */];
                 ref.email = childSnapshot.val().email;
                 ref.name = childSnapshot.val().username;
                 ref.phone = childSnapshot.val().phone;
-                callbackfun(ref);
+                ref.loanType = childSnapshot.val().loanType;
+                ref.comments = childSnapshot.val().comments;
+                ref.refertype = childSnapshot.val().refertype;
+                referrals.push(ref);
             });
+            callbackfun(referrals);
         };
         items.once('value', callback);
         items.push({
             username: referral.name.toString(),
             email: referral.email.toString(),
-            phone: referral.phone.toString()
+            phone: referral.phone.toString(),
+            loanType: referral.loanType.toString(),
+            comments: referral.comments.toString(),
+            refertype: referral.refertype.toString(),
         });
     };
     AuthService = __decorate([
